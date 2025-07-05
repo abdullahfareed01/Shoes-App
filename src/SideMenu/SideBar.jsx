@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Sidebar.css";
-import React from "react";
-import Home from "../Pages/Home/Home";
+import "./SideBar.css";
+// import React from "react";
+// import Home from "../Pages/Home/Home";
 import {Link} from "react-router-dom";
 
 
