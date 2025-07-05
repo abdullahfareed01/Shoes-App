@@ -1,0 +1,126 @@
+.sidebar-container{
+    padding: 10px 10px;
+    width: 300px;
+    background-color:  whitesmoke;
+    height: 100vh;
+    position: fixed;
+    left: -320px;
+    top: 0;
+    z-index: 10;
+    color: black;
+    overflow: hidden;
+    transition: left 0.4s ease-in-out;
+
+  }
+
+
+  .sidebar-container.Open{
+    left: 0;
+  }
+
+  .sidebar-container .button-menu{
+    right: 0px;
+    margin-left:270px ;
+
+    width:30px;
+    height: auto;
+    z-index: 2;
+  }
+
+  .sidebar-container .button-menu .close{
+    fill: rgba(0, 0, 0, 0.767);
+  }
+
+
+  .button-menu {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+
+  }
+  
+
+
+  .button-menu .Close{
+    background-color: '';
+    fill:grey;
+    height: 20px;
+  }
+
+  .open{
+    background-color: '';
+    fill: grey;
+    width: '';
+  }
+
+ 
+  
+  .sidebar-container  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .sidebar-container li{
+    text-decoration: none;
+    list-style: none;
+    color: grey;
+  }
+
+  .sidebar-container li:hover{
+    color: rgb(177, 176, 176);
+  }
+
+
+  
+  .sidebar-container ul .link {
+    text-align: left;
+    color: rgb(84, 84, 84);
+    font-size:'';
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-top: 1px  solid grey;
+    border-bottom: 1px solid grey ;
+    padding-right: 260px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+
+  }
+  
+  .sidebar-container .link:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+
+@media screen and (min-width:630px){
+
+  .sidebar-container{
+    display: none;
+  }
+
+  .button-menu{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:630px){
+  nav ul{
+    display: none;
+  }
+
+
+  
+}

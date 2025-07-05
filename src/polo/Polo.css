@@ -1,0 +1,75 @@
+.Polo-page{
+    padding: 30px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20PX;
+}
+
+.Polo-page h1{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.Polo-page .collection-p{
+    font-size: 1.3em;
+    color: grey;
+}
+
+.Polo-page .polo-price{
+    font-size: 1em;
+}
+
+.Polo-page .Polo{
+    width: 100%;
+    min-height: 100vh ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.Polo-page .polo-item{
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:20vw;
+    height: 28vw;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.polo-item img{
+    width: 35vw;
+}
+
+.polo-item button{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+
+.removeCart{
+    background-color: rgb(168, 4, 4);
+}
+
+
+.addCart{
+
+    background-color: rgba(0, 0, 0, 0.718);
+
+}

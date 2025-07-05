@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-top-headlines{
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 4px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: rgb(187, 187, 187) ;
+    color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.warning-svg{
+    height: 17px;
+    width: 17px;
+}
+
+nav{
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+  }
+
+  nav .nav-bar-content{
+    width: 88.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.Nav-bar .logo{
+    height: 2.4vw;
+}
+
+.title{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left:'' ;
+}
+
+.Nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    right: 150px;
+    
+}
+
+.navlink{
+    color: rgb(35, 35, 35) ;
+    text-decoration: none;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    list-style: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    display:flex;
+}
+
+.cart-details .cart-length{
+    font-weight: 900;
+    font-size: 0.7em;
+    color: rgba(35, 35, 35, 0.648);
+    padding: 0px 0px;
+    margin: 0px 0px;
+    position: absolute;
+    right: 0;
+}
+
+.cart-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 40px;
+    position: relative;
+}
+
+.cart-details img{
+  height: 20px;
+}
+
+.cart-details p{
+    position: absolute;
+    right: 5px;
+    font-size: 0.7em;
+    top: 0px;
+}
+
+
+
+
+@media screen and (min-width:630px){
+    .Nav-bar .ham-burger{
+        display: none;
+    }
+
+
+    
+}
+
+
+@media (max-width: 630px) {
+  .Nav-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .nav-bar-content{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    right: -30px;
+    
+}
+
+
+  .Nav-bar ul {
+    display:none; 
+  }
+
+  .Nav-bar .logo {
+    height: 20px;
+  }
+
+
+  .Nav-bar a:last-child {
+    z-index: 2;
+  }
+
+
+
+
+
+
+}
