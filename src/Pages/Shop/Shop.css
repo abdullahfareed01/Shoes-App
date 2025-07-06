@@ -235,7 +235,7 @@
   .watches-card .item .details button {
     width: 80px;
     min-height: 26px;
-    font-size: 0.65em;
+    font-size: 0.7em;
     font-weight: bolder;
     letter-spacing: 0.2px;
     word-spacing: 1px;
@@ -246,6 +246,7 @@
     cursor: pointer;
     transition: 0.5s ease;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .svgs {
@@ -256,7 +257,7 @@
   .svgs img {
     width: 13px;
     height: 13px;
-    padding: 5px;
+    padding: 5px 5px;
     background-color: rgb(53, 52, 52);
     border-radius: 50%;
   }

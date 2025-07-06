@@ -127,11 +127,17 @@ footer {
 
   .newsletter button {
     font-size: 1.5em;
+    width: a;
   }
 
+  
+  
+
+
   .footer-bottom p {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -172,6 +178,7 @@ footer {
   .newsletter button {
     font-size: 1.2em;
   }
+}
 
   @media (max-width: 360px) {
     .footer-content {
@@ -182,4 +189,4 @@ footer {
       width: 97.5%;
     }
   }
-}
+

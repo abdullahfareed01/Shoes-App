@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -89,6 +89,8 @@ function ProductSliderModal({ item, onClose }) {
 
         <h1>{item.name}</h1>
         <p className="prod-subheading"> Brown & white Nike sneakers for a clean everyday look.</p>
+        <h3>{`Rs: ${item.price}`}</h3>
+        {/* <br /> */}
         <h4>Select Size:</h4>
             <div className="sizes">
               {item.sizes?.map((size) => (

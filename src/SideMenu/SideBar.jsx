@@ -25,7 +25,7 @@ function SideBar(){
         
             <div className={`sidebar-container ${isOpen ? "Open" : ""}`}>
       <button className="button-menu" onClick={toggleBar}>
-        <FaTimes className="Close" />
+        <FaTimes className="Close" style={{ color: "" }}/>
       </button>
 
       <ul>

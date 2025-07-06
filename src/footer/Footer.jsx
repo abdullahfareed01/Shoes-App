@@ -5,10 +5,10 @@ function Footer(){
             <div className="footer-content">
                 <div className="footer-section">
                     <h3>About Us</h3>
-                    <p>- A watch that tells your story</p>
-                    <p>- since 2023</p>
+                    <p>- Shoes that walk with your story</p>
+                    <p>- since 2025</p>
                     <p>- Customer satisfaction is our priority</p>
-                    <p>- Online Store , we don't have a branch</p>
+                    <p>- Online store only — no physical branches</p>
                     <p></p>
                 </div>
 
@@ -27,7 +27,7 @@ function Footer(){
                         </svg>
                     </a>
                 
-                    <a href="">
+                    <a href="https://www.instagram.com/zyrostoreofficial?igsh=Y3FxNW5kbTJuODBq">
                         <svg className="instagram" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
                     <defs>
                         <linearGradient id="instagramGradient" gradientTransform="rotate(45)">
@@ -58,7 +58,10 @@ function Footer(){
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy all rights reserved , {new Date().getFullYear()} watches.pk Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                <p>
+                    &copy; {new Date().getFullYear()} ZyroStore. No copies. No limits. All rights reserved. 
+
+                </p>
             </div>
         </footer>
     </>);

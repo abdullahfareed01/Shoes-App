@@ -14,7 +14,8 @@ const SideCart = () => {
     state: { cart }, dispatch
   } = CartState();
 
-  const subtotal = cart.reduce((acc, item) => acc + Number(item.price), 0);
+  // const subtotal = cart.reduce((acc, item) => acc + Number(item.price), 0);
+  const subtotal = cart.reduce((acc, item) => acc + Number(item.price.replace(/,/g, '')), 0);
   const deliveryCharges = "Free";
   const total = subtotal;
 
@@ -77,9 +78,11 @@ const SideCart = () => {
             transition={{ opacity: { duration: 0.5 }, layout: { duration: 0.5 } }}>
 
             <div className="total-section">
-                <p>Subtotal: {subtotal} PKR</p>
+                {/* <p>Subtotal: {subtotal} PKR</p>
                 <p>Shipping: {deliveryCharges}</p>
-                <p className="Total">Total: {total} PKR</p>
+                <p className="Total">Total: {total} PKR</p> */}
+                <p>Subtotal: {subtotal.toLocaleString()} PKR</p>
+                <p className="Total">Total: {total.toLocaleString()} PKR</p>
                 
             </div>
             

@@ -1,14 +1,14 @@
 {
   "watch": [
-    { "id": 1, "name": "Sky blue cut", "src": "s1.png", "price": "2499", "alt": "Watch 2" ,"images": ["blue1.jpg","blue2.jpg","blue3.jpg","s1.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 2, "name": "Green Nike-Sneakers", "src": "s2.png", "price": "2999", "alt": "Watch 3" ,"images": ["green1.jpg","green2.jpg","green3.jpg","s2.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 3, "name": "Black Nike-Sneakers", "src": "s3.png", "price": "2799", "alt": "Watch 4" ,"images": ["black1.jpg","black2.jpg","black3.jpg","s3.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 4, "name": "Camel cut shoes", "src": "s4.png", "price": "2599", "alt": "Watch 5" ,"images": ["camel1.jpg","camel2.jpg","camel3.jpg","s4.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 5, "name": "Jet Black cut shoes ", "src": "s5.png", "price": "2899", "alt": "Watch 6" ,"images": ["jet1.jpg","jet2.jpg","jet3.jpg","s5.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 6, "name": "Brown Nike-Sneakers", "src": "s6.png", "price": "3199", "alt": "Watch 7" ,"images": ["brown1.png","brown2.png","brown3.png","s6.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 7, "name": "Black Velvet Loafers", "src": "s7.png", "price": "2699", "alt": "Watch 8" ,"images": ["blacklv1.jpg","blacklv2.jpg","blacklv3.jpg","s7.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 8, "name": "Camel Brown Velvet Loafers", "src": "s8.png", "price": "2499", "alt": "Watch 2" ,"images": ["camellv1.jpg","camellv2.jpg","camellv3.jpg","s8.png"] ,"sizes":["12","13","14","15"] },
-    { "id": 9, "name": "Beach color Velvet Loafers", "src": "s9.png", "price": "2999", "alt": "Watch 3" ,"images": ["beachlv1.jpg","beachlv2.jpg","beachlv1.0.jpg","s9.png"] ,"sizes":["12","13","14","15"] }
+    { "id": 1, "name": "Sky blue cut", "src": "s1.png", "price": "2,499", "alt": "Watch 2" ,"images": ["blue1.jpg","blue2.jpg","blue3.jpg","s1.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 2, "name": "Green Nike-Sneakers", "src": "s2.png", "price": "2,999", "alt": "Watch 3" ,"images": ["green1.jpg","green2.jpg","green3.jpg","s2.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 3, "name": "Black Nike-Sneakers", "src": "s3.png", "price": "2,799", "alt": "Watch 4" ,"images": ["black1.jpg","black2.jpg","black3.jpg","s3.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 4, "name": "Camel cut shoes", "src": "s4.png", "price": "2,599", "alt": "Watch 5" ,"images": ["camel1.jpg","camel2.jpg","camel3.jpg","s4.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 5, "name": "Jet Black cut shoes ", "src": "s5.png", "price": "2,899", "alt": "Watch 6" ,"images": ["jet1.jpg","jet2.jpg","jet3.jpg","s5.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 6, "name": "Brown Nike-Sneakers", "src": "s6.png", "price": "3,199", "alt": "Watch 7" ,"images": ["brown1.png","brown2.png","brown3.png","s6.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 7, "name": "Black Velvet Loafers", "src": "s7.png", "price": "2,699", "alt": "Watch 8" ,"images": ["blacklv1.jpg","blacklv2.jpg","blacklv3.jpg","s7.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 8, "name": "Camel Brown Velvet Loafers", "src": "s8.png", "price": "2,499", "alt": "Watch 2" ,"images": ["camellv1.jpg","camellv2.jpg","camellv3.jpg","s8.png"] ,"sizes":["12","13","14","15"] },
+    { "id": 9, "name": "Beach color Velvet Loafers", "src": "s9.png", "price": "2,999", "alt": "Watch 3" ,"images": ["beachlv1.jpg","beachlv2.jpg","beachlv1.0.jpg","s9.png"] ,"sizes":["12","13","14","15"] }
   ],
   "featured": [
     { "name": "Watch model 1", "src": "w5.png", "alt": "", "price": "2499" },

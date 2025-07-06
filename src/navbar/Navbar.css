@@ -7,7 +7,7 @@
     text-align: center;
     font-weight: 500;
     word-spacing: 4px;
-    font-size: 12px;
+    font-size: 1em;
     padding: 5px;
     background-color: rgb(187, 187, 187) ;
     color: rgb(49, 49, 49);
@@ -121,6 +121,11 @@ li{
 
 
 @media (max-width: 630px) {
+
+  .nav-top-headlines{ 
+    font-size: 0.85em;
+  }
+
   .Nav-bar {
     display: flex;
     align-items: center;
