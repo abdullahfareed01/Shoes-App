@@ -6,7 +6,7 @@ A modern and stylish e-commerce shoe store built with **React** and **Vite**, fe
 
 ## 🚀 Live Preview
 
-👉 [**View Live Site**](https://shoes-app.netlify.app)
+👉 [**View Live Site**](https://zyrostore.netlify.app)
 
 > Deployed via Netlify
 
