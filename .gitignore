@@ -1,5 +1,7 @@
-# Ignore Netlify config folder
-.netlify
+# Netlify local artifacts
+.netlify/
+functions-serve/
+functions-internal/
 
-# Ignore dependencies
+# dependencies
 node_modules/
