@@ -25,6 +25,42 @@ const SideCart = () => {
   const deliveryCharges = "Free";
   const total = subtotal;
 
+  const productDetails = cart.map((item) => ({
+  name: item.name,
+  price: item.price,
+  size: item.selectedSize,
+  qty: item.qty,
+}));
+
+
+const handleOrderSubmit = async () => {
+  try {
+    const response = await fetch("/.netlify/functions/order-proxy", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "Abdullah",           // Replace with dynamic input if needed
+        lastName: "Fareed",         // Or use form values
+        contact: "0300-1234567",
+        address: "Gulshan, Karachi",
+        city: "Karachi",
+        productDetails,             // ✅ includes qty
+      }),
+    });
+
+    const result = await response.json();
+    console.log("Order sent:", result);
+    alert("Order submitted successfully!");
+  } catch (error) {
+    console.error("Failed to send order:", error);
+    alert("Failed to submit order.");
+  }
+};
+
+
+
   return (
     <div className="cart-container">
 
@@ -135,7 +171,11 @@ const SideCart = () => {
             <div className="payment-section">
               <p>⚠️ Online or banking transactions are currecntly un available</p>
                   
-                  <button onClick={() => navigate("/checkout")}>Checkout</button>
+                  {/* <button onClick={() => navigate("/checkout")}>Checkout</button> */
+                  // <button onClick={() => navigate("/checkout", { state: { cart } })}>Checkout</button>
+}
+                  <button onClick={handleOrderSubmit}>Place Order</button>
+
                 </div>
 
           
