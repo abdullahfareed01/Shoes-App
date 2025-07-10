@@ -14,8 +14,14 @@ const SideCart = () => {
     state: { cart }, dispatch
   } = CartState();
 
-  // const subtotal = cart.reduce((acc, item) => acc + Number(item.price), 0);
-  const subtotal = cart.reduce((acc, item) => acc + Number(item.price.replace(/,/g, '')), 0);
+  const subtotal = cart.reduce(
+  (acc, item) => acc + Number(item.price.replace(/,/g, '')) * item.qty,
+  0
+);
+
+
+  // const subtotal = cart.reduce((acc, item) => acc + Number(item.price.replace(/,/g, '')), 0);
+  
   const deliveryCharges = "Free";
   const total = subtotal;
 
@@ -50,6 +56,43 @@ const SideCart = () => {
                 <p className="size">Size: {item.selectedSize}</p>
                 <p className="polo-price">{item.price} pkr</p>
               </div>
+
+                              <div className="qty-controls">
+                <button
+                  className="quantity"
+                  onClick={() =>
+                    dispatch({
+                      type: "CHANGE_CART_QTY",
+                      payload: {
+                        id: item.id,
+                        qty: Math.max(1, item.qty - 1), // prevent going below 1
+                      },
+                    })
+                  }
+                >
+                  -
+                </button>
+
+                <span>{item.qty}</span>
+
+                <button
+                className="quantity"
+                  onClick={() =>
+                    dispatch({
+                      type: "CHANGE_CART_QTY",
+                      payload: {
+                        id: item.id,
+                        qty: item.qty + 1,
+                      },
+                    })
+                  }
+                >
+                  +
+                </button>
+              </div>
+
+
+
               <motion.span
                 whileHover={{ scale: 1.3 }}
                 whileTap={{ scale: 0.95 }}
@@ -62,7 +105,12 @@ const SideCart = () => {
                 }
               >
                 <AiFillDelete style={{ fill: "grey" }} />
+
+
               </motion.span>
+
+
+
             </motion.div>
           ))}
 
@@ -78,9 +126,7 @@ const SideCart = () => {
             transition={{ opacity: { duration: 0.5 }, layout: { duration: 0.5 } }}>
 
             <div className="total-section">
-                {/* <p>Subtotal: {subtotal} PKR</p>
-                <p>Shipping: {deliveryCharges}</p>
-                <p className="Total">Total: {total} PKR</p> */}
+                
                 <p>Subtotal: {subtotal.toLocaleString()} PKR</p>
                 <p className="Total">Total: {total.toLocaleString()} PKR</p>
                 
@@ -107,3 +153,8 @@ const SideCart = () => {
 };
 
 export default SideCart;
+
+
+
+
+

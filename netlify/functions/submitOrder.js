@@ -6,7 +6,7 @@ exports.handler = async (event) => {
     return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const url = "https://script.google.com/macros/s/AKfycbzVcqoVzS2QhmrojkJ9_bIpjQE4alFPJU69z3kEvQ21rwLep4zpjJ0Xko9TTV42oaCa/exec"; // put your script URL
+  const url = "https://script.google.com/macros/s/AKfycbzKGWpoDuRQjaj9hSFcPj4MaOy6jOB2SpHEKUFXHB_5RwVnANAAXIU-pBsfSH0IZ4HerQ/exec"; // put your script URL
   const body = event.body;
 
   try {

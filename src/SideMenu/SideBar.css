@@ -90,6 +90,8 @@ border-right: 1px solid rgba(255, 255, 255, 0.1);
   .sidebar-container li{
     text-decoration: none;
     list-style: none;
+    /* padding-left: 10px; */
+    /* margin-left: 10px; */
     /* color: grey; */
     /* color: #ffd369; */
   }
@@ -114,6 +116,7 @@ border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
     padding-left: 15px;
     font-weight: bold;
+    /* margin-left: 10px; */
 
   }
   

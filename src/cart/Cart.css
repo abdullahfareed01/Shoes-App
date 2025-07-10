@@ -27,6 +27,7 @@
 .cart-item {
   background-color: #1a1a1a; 
   display: flex;
+  /* justify-content: center; */
   align-items: center;
   max-height: 200px;
   padding-right: 20px;
@@ -175,6 +176,56 @@ span {
 }
 
 
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* background-color: red; */
+  /* border: 1px solid grey; */
+  /* margin-top: 10px; */
+}
+
+.qty-controls .quantity {
+  width: 38px;
+  height: 28px;
+  font-size: 16px;
+  background-color: '';
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 32, 32);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: auto 0;
+}
+
+.qty-controls span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  /* font-size: 14px; */
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  .qty-controls .quantity {
+    width: 28px;
+    height: 25px;
+    font-size: 18px;
+
+  }
+
+  .qty-controls{
+    padding-right: 5px;
+  }
+
+  .qty-controls span {
+    font-size: 12px;
+  }
+}
+
+
+
 
 /* QUERIES * /
 
@@ -242,7 +293,12 @@ span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   
+}
+
+.cart-item img{
+  width: 40px;
 }
 
 .price-detail h3, .size{
