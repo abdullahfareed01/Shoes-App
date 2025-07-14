@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home.jsx";
 import Contact from "./Pages/contact/Contact.jsx";
 import SideCart from "./cart/SideCart.jsx";
 import Footer from "./footer/Footer.jsx";
-import Polo from "./polo/Polo.jsx";
+// import Polo from "./polo/Polo.jsx";
 import OrderForm from "./orderForm/OrderForm.jsx";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="/Polo" element={<Polo />} />
+        {/* <Route path="/Polo" element={<Polo />} /> */}
         <Route path="/Home" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Shop" element={<Shop />} />

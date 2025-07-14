@@ -82,7 +82,7 @@ function ProductSliderModal({ item, onClose }) {
         >
           {item.images.map((src, i) => (
             <SwiperSlide key={i}>
-              <img src={src} alt="" className="thumb-img" />
+              <img src={src} alt="" className="thumb-img"/>
             </SwiperSlide>
           ))}
         </Swiper>

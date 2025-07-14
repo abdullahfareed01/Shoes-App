@@ -40,7 +40,7 @@ return(<><div className="hero-section">
 
             <div className="arrowLeft" onClick={prevSlide}/>
             {data.slides.map((item,index)=>{
-                return <img src={item.src} alt={item.alt} key={index} className={slide == index ? "slide" : "slide slide-hidden"}/>
+                return <img src={item.src} alt={item.alt} key={index} className={slide == index ? "slide" : "slide slide-hidden"} />
             })}
 
 

@@ -35,27 +35,42 @@ const SideCart = () => {
 
 const handleOrderSubmit = async () => {
   try {
-    const response = await fetch("/.netlify/functions/order-proxy", {
+    console.log(">> Sending order…");
+    const res = await fetch("/.netlify/functions/submitOrder", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: "Abdullah",           // Replace with dynamic input if needed
-        lastName: "Fareed",         // Or use form values
+        name: "Abdullah",
+        lastName: "Fareed",
         contact: "0300-1234567",
         address: "Gulshan, Karachi",
         city: "Karachi",
-        productDetails,             // ✅ includes qty
+        productDetails, // your array with qty
       }),
     });
 
-    const result = await response.json();
-    console.log("Order sent:", result);
-    alert("Order submitted successfully!");
-  } catch (error) {
-    console.error("Failed to send order:", error);
-    alert("Failed to submit order.");
+    console.log("▶️ Raw response status:", res.status, res.statusText);
+    const text = await res.text();
+    console.log("▶️ Raw response body:", text);
+
+    let data;
+    try {
+      data = JSON.parse(text);
+      console.log("▶️ Parsed JSON:", data);
+    } catch (parseErr) {
+      console.warn("⚠️ Response wasn’t JSON:", parseErr);
+      data = { status: "ok", payload: text };
+    }
+
+    // Now check for errors
+    if (data.status !== "ok") {
+      throw new Error(data.message || "Server returned an error");
+    }
+
+    alert("✅ Order submitted successfully!");
+  } catch (err) {
+    console.error("❌ Submission error:", err);
+    alert("⚠️ Order submission failed: " + err.message);
   }
 };
 
@@ -81,7 +96,7 @@ const handleOrderSubmit = async () => {
               transition={{ opacity: { duration: 0.3 }, layout: { duration: 0.5 } }}>
 
               <div className="watch-image">
-                <img src={item.src} alt={item.name} />
+                <img  src={item.src} alt={item.name} />
               </div>
 
               <div className="price-detail">
@@ -118,7 +133,7 @@ const handleOrderSubmit = async () => {
                       type: "CHANGE_CART_QTY",
                       payload: {
                         id: item.id,
-                        qty: item.qty + 1,
+                        qty: item.qty + 1
                       },
                     })
                   }
@@ -172,9 +187,10 @@ const handleOrderSubmit = async () => {
               <p>⚠️ Online or banking transactions are currecntly un available</p>
                   
                   {/* <button onClick={() => navigate("/checkout")}>Checkout</button> */
-                  // <button onClick={() => navigate("/checkout", { state: { cart } })}>Checkout</button>
+                  <button onClick={() => navigate("/checkout", { state: { cart } })}>Checkout</button>
 }
-                  <button onClick={handleOrderSubmit}>Place Order</button>
+                  {/* <button onClick={handleOrderSubmit}>Place Order</button> */}
+              {/* <button onClick={() => navigate("/order")}>Checkout</button> */}
 
                 </div>
 

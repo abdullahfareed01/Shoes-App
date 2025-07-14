@@ -15,7 +15,7 @@ function Navbar(){
 
     return(<>
         <div className="nav-top-headlines">
-            <img src={warning} alt="" className="warning-svg"/>
+            <img src={warning} alt="" className="warning-svg" loading="lazy"/>
             <p className="nav-top-paragraph">Free delivery all over Pakistan</p>
 
         </div>
@@ -26,12 +26,12 @@ function Navbar(){
                 {/* <img src={menu} alt="" className="ham-burger" /> */}
                 <SideBar/>
             
-                <img src="logo.jpg" className="logo" alt="" />
+                <img src="logo.jpg" className="logo" alt=""  />
 
                 <ul>
                     
                     <li> <Link to={"./Home"} className="navlink">Home</Link> </li>
-                    <li> <Link to={"./Polo"} className="navlink">Polo</Link> </li>
+                    {/* <li> <Link to={"./Polo"} className="navlink">Polo</Link> </li> */}
                     <li> <Link to={"./Shop"} className="navlink">Shop</Link> </li>
                     <li> <Link to={"./Contact"} className="navlink">Contact</Link> </li>
                     {/* <li><Link to={"./SideCart"}> <img src={cartIcon} alt="" /></Link> <p className="cart-length">{cart.length}</p> </li> */}

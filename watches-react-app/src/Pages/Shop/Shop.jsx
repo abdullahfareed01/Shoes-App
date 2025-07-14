@@ -29,12 +29,12 @@ function Shop() {
               
             >
 
-              <ImageWithLoader src={item.src} alt={item.name} className="watch-img" />
+              <ImageWithLoader src={item.src} alt={item.name} className="watch-img"/>
 
               <div className="details">
                 <div className="svgs">
                   <img src={favorite} alt="" className="fav" />
-                  <img src={cart1} alt="" className="cart" />
+                  <img src={cart1} alt="" className="cart"  />
                   <img src={search} alt="" className="search" />
                 </div>
                 <h2>{item.name}</h2>
