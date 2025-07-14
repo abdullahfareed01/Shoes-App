@@ -2,5 +2,6 @@
 base = "watches-react-app"
 command = "npm run build"
 publish = "watches-react-app/dist"
-functions = "watches-react-app/netlify/functions"
 
+[functions]
+directory = "watches-react-app/netlify/functions"
