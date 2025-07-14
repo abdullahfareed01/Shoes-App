@@ -65,11 +65,12 @@ function OrderForm() {
 
     setIsSubmitting(true);
 
-    const productDetails = cart.map((item) => ({
-      name: item.name,
-      price: item.price,
-      size: item.selectedSize,
-    }));
+const productDetails = cart.map((item) => ({
+  name: item.name,
+  price: item.price,
+  size: item.selectedSize,
+  qty: item.qty
+}));
 
     console.log("Final payload to Sheets:", {
       ...formData,
