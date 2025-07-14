@@ -32,4 +32,10 @@ functions = "C:\\Users\\Noman Traders\\Desktop\\Watches Website\\watches-react-a
 
 [functions]
 
-[functions."*"]
+[functions."*"][build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
