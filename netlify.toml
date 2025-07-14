@@ -19,3 +19,13 @@
   #  publish = "dist" # Folder with the static content for _redirect file
 
   ## more info on configuring this file: https://ntl.fyi/file-based-build-config
+
+
+
+[build]
+base = "watches-react-app"
+command = "npm run build"
+publish = "watches-react-app/dist"
+
+[functions]
+directory = "watches-react-app/netlify/functions"
